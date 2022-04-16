@@ -1,18 +1,17 @@
-import logo from '../../../assets/svg/logo.svg';
+import { Link } from 'react-router-dom';
 import './Home.scss';
 
 function Home() {
   return (
     <div className="Home">
-      <header className="Home-header">
-        <img src={logo} className="Home-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="Home-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+      <header>
+        <h1 className="Home-header text-center">Planning Poker for estimating stories&tasks</h1>
       </header>
+      <div className="d-grid gap-3 col-3 mx-auto">
+				<Link to='/newtable' className="btn btn-primary">Create new table</Link>
+				<Link to='/tables' className="btn btn-primary">Show my tables</Link>
+				<Link to='/testTable' className="btn btn-primary">Test table</Link>
+      </div>
     </div>
   );
 }

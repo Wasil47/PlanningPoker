@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
-import './NewTable.scss';
 
-function NewTable() {
+function TableList() {
   return (
-    <div className="NewTable">
-      <h1>NewTable</h1>
+    <div className="Table">
+      <h1>TableList</h1>
       <Link to="/" className="btn btn-primary">
         backHome
       </Link>
@@ -12,4 +11,4 @@ function NewTable() {
   );
 }
 
-export default NewTable;
+export default TableList;
