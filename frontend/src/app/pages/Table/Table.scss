@@ -1,0 +1,47 @@
+@import '../../../assets/scss/variables.scss';
+
+.Table {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  .table {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 10rem 1fr 10rem; // width
+    grid-template-rows: 10rem 1fr 10rem; // heigth
+    // grid-template-rows: auto;
+    grid-template-areas:
+      'left top right'
+      'left middle right'
+      'left bottom right';
+
+    margin: 0 auto;
+    .table {
+      &-middle {
+        grid-area: middle;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: $table-color;
+        height: 10rem;
+        width: 25rem;
+        border-radius: 3rem;
+      }
+      &-left {
+        grid-area: left;
+      }
+      &-right {
+        grid-area: right;
+      }
+      &-top {
+        grid-area: top;
+      }
+      &-bottom {
+        grid-area: bottom;
+      }
+    }
+  }
+}

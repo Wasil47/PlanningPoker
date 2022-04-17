@@ -5,14 +5,22 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   box-sizing: border-box;
   color: $text-color-light;
   font-family: $main-font;
   line-height: 1.1;
   scroll-behavior: smooth;
-	text-align: center;
+  text-align: center;
+	border: none;
 }
+
 body {
   background: $background-color;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
 }
