@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  .table {
+  gap: 2rem;
+  .table-wrapper {
     display: grid;
     gap: 1rem;
     grid-template-columns: 10rem 1fr 10rem; // width
@@ -19,12 +20,12 @@
 
     margin: 0 auto;
     .table {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: auto;
       &-middle {
         grid-area: middle;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
         background-color: $table-color;
         height: 10rem;
         width: 25rem;
@@ -44,4 +45,33 @@
       }
     }
   }
+}
+
+.Player {
+  .player-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    .player-card {
+      background-color: $card-color-unselected;
+      border-radius: 0.8rem;
+      height: 7rem;
+      width: 4rem;
+    }
+    .selected {
+      background-color: $card-color-selected;
+    }
+    .player-name {
+    }
+  }
+}
+
+.cards-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
 }
